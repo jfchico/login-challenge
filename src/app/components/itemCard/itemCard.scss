@@ -1,0 +1,52 @@
+$med-padding: 5px;
+$big-padding: 10px;
+$small-padding: 2px;
+$tiny-padding: 1px;
+
+$shadow-color: rgba(0, 0, 0, 0.2);
+
+.card {
+  margin: $med-padding;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.8em;
+  border-radius: $small-padding;
+  overflow: hidden;
+  box-shadow: $small-padding $small-padding $small-padding $small-padding $shadow-color;
+  background-color: #FFFFF8;
+
+  .top-section {
+    height: 60px;
+    width: 100%;
+    object-fit: cover;
+    background-color: #fce094;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .card-name {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+
+  .middle-section {
+    padding: $med-padding;
+    display: flex;
+    height: 100%;
+    text-align: left;
+
+    ul {
+      list-style-type: none;
+      padding: 10px;
+      margin: 0;
+
+      li {
+        margin: 5px 0;
+      }
+    }
+  }
+}

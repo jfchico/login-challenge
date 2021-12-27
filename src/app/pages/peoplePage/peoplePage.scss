@@ -1,0 +1,42 @@
+$med-padding: 5px;
+$big-padding: 10px;
+$small-padding: 2px;
+$tiny-padding: 1px;
+
+$shadow-color: rgba(0, 0, 0, 0.2);
+
+.main-container {
+  display: flex;
+
+  .data-container {
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFFFF8;
+    width: 100%;
+    border-radius: $small-padding;
+    overflow: hidden;
+    box-shadow: $small-padding $small-padding $small-padding $small-padding $shadow-color;
+
+    .header {
+      background-color: #fce094;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .header-title {
+        font-size: 1.3rem;
+      }
+    }
+
+    .items-container {
+      margin: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
