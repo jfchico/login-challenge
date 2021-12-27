@@ -21,7 +21,7 @@ export const ItemCard = (props: ItemCardProps) => {
         <ul>
           {props.info?.map(infoData => {
             console.log('infoData', infoData)
-            return <li><span>{infoData.label}: {infoData.value}</span></li>
+            return <li key={infoData.value}><span>{infoData.label}: {infoData.value}</span></li>
           })}
         </ul>
       </div>

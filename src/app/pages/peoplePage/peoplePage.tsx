@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { LeftMenu, ItemCard } from '../../components';
 import { PersonModel } from '../../../model';
-import './peoplePage.scss';
+import { DataContainer } from '../../components/dataContainer';
 
 
 export interface PeoplePageDataProps {
@@ -14,7 +14,7 @@ export interface PeoplePageMethodsProps {
 
 type Props = PeoplePageDataProps & PeoplePageMethodsProps;
 
-export const PeoplePage = (props: Props): JSX.Element => {
+export const PeoplePage: React.FC<Props> = (props: Props): JSX.Element => {
   React.useEffect(() => {
     props.fetchPeople();
   }, []);
@@ -31,19 +31,14 @@ export const PeoplePage = (props: Props): JSX.Element => {
   return (
     <div className="main-container">
       <LeftMenu />
-      <div className="data-container">
-        <div className="header">
-          <span className="header-title">People</span>
-        </div>
-        <div className="items-container">
-          {props.people?.map(person => 
-            <ItemCard
-            name={person.name}
-            info={buildPeopleInfo(person)}
-            />
-          )}
-          </div>
-      </div>
+      <DataContainer sectionName={'People'}>
+        {props.people?.map(person => 
+          <ItemCard
+          name={person.name}
+          info={buildPeopleInfo(person)}
+          />
+        )}
+      </DataContainer>
     </div>
   );
 }

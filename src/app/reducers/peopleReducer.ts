@@ -1,5 +1,4 @@
 import { PersonModel } from '../../model';
-
 import { FETCH_PEOPLE_LIST } from '../actions/actionsTypes';
 
 

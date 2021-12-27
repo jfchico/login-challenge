@@ -9,13 +9,7 @@ const props: PeoplePageDataProps & PeoplePageMethodsProps = {
 }
 
 
-describe('pages/itemListPage tests', () => {
-  it('should render as expected', () => {
-    const wrapper = shallow(<PeoplePage {...props} />);
-    expect(wrapper.find('div.main-container').length).toBe(1);
-    expect(wrapper.find('div.items-container').length).toBe(1);
-  });
-
+describe('pages/peoplePage tests', () => {
   it('should call fetchItemList', () => {
     const wrapper = mount(<PeoplePage {...props} />);
     expect(props.fetchPeople).toHaveBeenCalled();
