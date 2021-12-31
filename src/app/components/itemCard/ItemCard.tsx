@@ -13,14 +13,13 @@ export interface ItemCardProps {
 
 export const ItemCard = (props: ItemCardProps) => {
   return (
-    <div className="card" key={props.name}>
+    <div className="card">
       <div className= "top-section">
         <span className="card-name">{props.name}</span>
       </div>
       <div className="middle-section">
         <ul>
           {props.info?.map(infoData => {
-            console.log('infoData', infoData)
             return <li key={infoData.value}><span>{infoData.label}: {infoData.value}</span></li>
           })}
         </ul>

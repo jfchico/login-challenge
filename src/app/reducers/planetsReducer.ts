@@ -1,4 +1,4 @@
-import { PlanetModel } from '../../model';
+import { PlanetModel } from '../model';
 import { FETCH_PLANETS_LIST } from '../actions/actionsTypes';
 
 

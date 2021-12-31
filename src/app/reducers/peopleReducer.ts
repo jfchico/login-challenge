@@ -1,4 +1,4 @@
-import { PersonModel } from '../../model';
+import { PersonModel } from '../model';
 import { FETCH_PEOPLE_LIST } from '../actions/actionsTypes';
 
 
@@ -18,7 +18,7 @@ export const peopleReducer = (state = initialPeopleState, action: { type: any; p
         people: mapPeopleResult(action.payload.results),
       };
     default:
-      return state
+      return state;
   }
 };
 

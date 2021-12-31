@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import { PEOPLE_LIST_URL } from './api.endpoints';
 import { FETCH_PEOPLE_LIST } from './actionsTypes';
-import { PersonModel } from '../../model';
+import { PersonModel } from '../model';
 
 export interface AddItemToCartType {
   type: string;

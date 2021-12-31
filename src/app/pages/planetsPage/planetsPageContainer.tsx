@@ -5,7 +5,8 @@ import { PlanetsPage, PlanetsPageDataProps, PlanetsPageMethodsProps } from './pl
 
 export const mapStateToPropsPage  = (state: State): PlanetsPageDataProps => ({
   planets: state.planetsReducer.planets,
-})
+  loggedUser: state.loginReducer.authed,
+});
 
 export const mapDispatchToPropsPage = (dispatch: any): PlanetsPageMethodsProps => {
   const res = {

@@ -1,2 +1,3 @@
 export const FETCH_PEOPLE_LIST = 'FETCH_PEOPLE_LIST';
 export const FETCH_PLANETS_LIST = 'FETCH_PLANETS_LIST';
+export const LOGIN_AUTH = 'LOGIN_AUTH';

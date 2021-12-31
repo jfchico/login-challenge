@@ -5,6 +5,7 @@ import { PeoplePage, PeoplePageDataProps, PeoplePageMethodsProps } from './peopl
 
 export const mapStateToPropsPeoplePage  = (state: State): PeoplePageDataProps => ({
   people: state.peopleReducer.people,
+  loggedUser: state.loginReducer.authed,
 })
 
 export const mapDispatchToPropsPeoplePage = (dispatch: any): PeoplePageMethodsProps => {

@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 
 import { PlanetsPageMethodsProps, PlanetsPageDataProps, PlanetsPage } from '.';
 
 const props: PlanetsPageDataProps & PlanetsPageMethodsProps = {
   planets: [],
+  loggedUser: {email:'user@email', name:'User Name', tokenId: 'token_id'},
   fetchPlanets: jest.fn(),
 }
 

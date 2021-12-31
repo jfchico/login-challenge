@@ -1,6 +1,4 @@
 import * as React from 'react';
-import { LeftMenu, ItemCard } from '../../components';
-import { PlanetModel } from '../../../model';
 import './dataContainer.scss';
 
 
